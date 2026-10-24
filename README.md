@@ -1,6 +1,6 @@
 # AI Red Team Notes
 
-A clean, sectioned reference distilled from HTB's AI Red Teamer path — scoped to what's actually exploitable in a timed engagement like CPTC. This repo deliberately skips training-time/white-box attacks (data poisoning, adversarial evasion math, model internals) that need access you will never have against a deployed client app in an 8-hour window. See [Scope](#scope) below.
+A clean, sectioned reference for attacking AI-enabled targets — scoped to what's actually exploitable in a timed engagement like CPTC. This repo deliberately skips training-time/white-box attacks (data poisoning, adversarial evasion math, model internals) that need access you will never have against a deployed client app in an 8-hour window. See [Scope](#scope) below.
 
 Each stage folder holds a set of `.md` files covering one focused topic; sections mirror an engagement against an AI-enabled target from recon through exploitation to defense-aware reporting.
 
@@ -57,7 +57,7 @@ Each stage folder holds a set of `.md` files covering one focused topic; section
 
 ## Scope
 
-This repo intentionally excludes HTB AI Red Teamer content that needs training-time, white-box, or heavy-API-budget access an attacker won't have in a CPTC-style engagement:
+This repo intentionally excludes attack categories that need training-time, white-box, or heavy-API-budget access an attacker won't have in a CPTC-style engagement:
 
 - **Data attacks** (trojan/backdoor attacks, label flipping, clean-label attacks, pickle/tensor steganography) — require write access to the training pipeline/dataset.
 - **Evasion attacks** (FGSM, DeepFool, JSMA, ElasticNet) — require white-box gradient access to a classifier's weights.
@@ -88,6 +88,3 @@ ai-redteam-notes/
 └── _appendix-privacy-attacks.md       ← low-priority reference, not core playbook
 ```
 
-## Acknowledgements
-
-Distilled from HackTheBox's AI Red Teamer path coursework.

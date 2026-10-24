@@ -66,13 +66,6 @@ This repo intentionally excludes attack categories that need training-time, whit
 
 If a target exposes model internals or a training pipeline directly, that's valuable — but for a network pentest competition, assume black-box access to a deployed LLM-powered app or service.
 
-## Conventions
-
-- All files are standard Markdown (`.md`) for direct rendering on GitHub.
-- Each file opens with a short summary, then practical content organized by technique.
-- Code blocks are fenced with `bash`, `python`, `json`, etc. so syntax highlighting works on GitHub.
-- Placeholders use `<angle-brackets>` (e.g. `<target-url>`, `<api-key>`) — replace with engagement values.
-
 ## Layout
 
 ```
